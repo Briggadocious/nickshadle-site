@@ -3,7 +3,7 @@ export default function Home() {
     <main className="max-w-4xl mx-auto px-6 py-16 space-y-16">
 
       <section className="space-y-2">
-        <h1 className="text-5xl font-bold">Nick Shadle</h1>
+        <h1 className="text-5xl font-bold tracking-tight">Nicholas Shadle</h1>
         <h2 className="text-xl text-gray-600">
           Operations • Supply Chain • Continuous Improvement
         </h2>
@@ -20,7 +20,8 @@ export default function Home() {
         <h3 className="text-2xl font-semibold">About</h3>
         <p className="text-gray-700">
           I improve manufacturing systems through production planning, inventory control,
-          and process optimization.
+          and process optimization. This page is currently under construction and is a learning tool 
+          for personal upskilling by yours truly.
         </p>
       </section>
 
