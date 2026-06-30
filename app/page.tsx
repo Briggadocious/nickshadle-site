@@ -1,15 +1,13 @@
 export default function Home() {
   return (
-    <main className="max-w-3xl mx-auto p-10 space-y-12">
+    <main className="max-w-4xl mx-auto px-6 py-16 space-y-16">
 
-      {/* HERO */}
       <section className="space-y-2">
         <h1 className="text-5xl font-bold">Nick Shadle</h1>
         <h2 className="text-xl text-gray-600">
           Operations • Supply Chain • Continuous Improvement
         </h2>
 
-        {/* RESUME BUTTON */}
         <a
           href="/resume.pdf"
           className="inline-block mt-4 px-4 py-2 bg-black text-white rounded"
@@ -18,7 +16,6 @@ export default function Home() {
         </a>
       </section>
 
-      {/* ABOUT */}
       <section className="space-y-2">
         <h3 className="text-2xl font-semibold">About</h3>
         <p className="text-gray-700">
@@ -27,7 +24,6 @@ export default function Home() {
         </p>
       </section>
 
-      {/* SKILLS */}
       <section className="space-y-2">
         <h3 className="text-2xl font-semibold">Skills</h3>
         <div className="flex flex-wrap gap-2">
@@ -47,27 +43,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PROJECTS */}
-      <section className="space-y-4">
-        <h3 className="text-2xl font-semibold">Projects</h3>
-
-        <div className="space-y-4">
-          <div className="p-4 border rounded-lg">
-            <h4 className="font-semibold">Production Tracking System</h4>
-            <p className="text-gray-600 text-sm">
-              Built a system to track output and identify bottlenecks in production flow.
-            </p>
-          </div>
-
-          <div className="p-4 border rounded-lg">
-            <h4 className="font-semibold">Inventory Optimization</h4>
-            <p className="text-gray-600 text-sm">
-              Improved forecasting and reduced waste through better inventory planning.
-            </p>
-          </div>
-        </div>
-      </section>
-
     </main>
+    <section className="space-y-4">
+    <h3 className="text-2xl font-semibold">Projects</h3>
+  
+    <div className="space-y-4">
+      <div className="p-4 border rounded-lg">
+        <h4 className="font-semibold">Production Tracking System</h4>
+        <p className="text-gray-600 text-sm">
+          Built a system to track output and identify bottlenecks in production flow.
+        </p>
+      </div>
+  
+      <div className="p-4 border rounded-lg">
+        <h4 className="font-semibold">Inventory Optimization</h4>
+        <p className="text-gray-600 text-sm">
+          Improved forecasting and reduced waste through better inventory planning.
+        </p>
+      </div>
+    </div>
+  </section>
   );
 }
