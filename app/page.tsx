@@ -31,9 +31,14 @@ export default function Home() {
       <section className="space-y-2">
         <h3 className="text-2xl font-semibold">About</h3>
         <p className="text-gray-700">
-          I improve manufacturing systems through production planning, inventory control,
-          and process optimization. This page is currently under construction and is a learning tool
-          for personal upskilling by yours truly.
+          <p className="text-gray-700">
+  I'm a manufacturing and operations professional with more than a decade of experience
+  in beverage production, procurement, inventory management, and process improvement.
+  After building a career in brewing and beverage manufacturing, I'm expanding into
+  broader operations and supply chain roles while continuing to develop skills in
+  continuous improvement, technology, and automation. This website serves as my
+  professional portfolio and a record of ongoing projects and learning.
+</p>
         </p>
       </section>
 
