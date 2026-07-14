@@ -1,3 +1,4 @@
+
 export default function Home() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-16 space-y-16">
@@ -6,7 +7,19 @@ export default function Home() {
         <h2 className="text-xl text-gray-600">
           Operations • Supply Chain • Continuous Improvement
         </h2>
+<div className="flex gap-4 mt-4 text-blue-600">
+  <a
+    href="https://www.linkedin.com/in/nick-shadle-679461230"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    LinkedIn
+  </a>
 
+  <a href="mailto:NICHOLAS.SHADLE78@GMAIL.COM">
+    Email
+  </a>
+</div>
         <a
           href="/resume.pdf"
           className="inline-block mt-4 px-4 py-2 bg-black text-white rounded"
