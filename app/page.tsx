@@ -28,19 +28,18 @@ export default function Home() {
         </a>
       </section>
 
+      
       <section className="space-y-2">
-        <h3 className="text-2xl font-semibold">About</h3>
-        <p className="text-gray-700">
-          <p className="text-gray-700">
-  I'm a manufacturing and operations professional with more than a decade of experience
-  in beverage production, procurement, inventory management, and process improvement.
-  After building a career in brewing and beverage manufacturing, I'm expanding into
-  broader operations and supply chain roles while continuing to develop skills in
-  continuous improvement, technology, and automation. This website serves as my
-  professional portfolio and a record of ongoing projects and learning.
-</p>
-        </p>
-      </section>
+  <h3 className="text-2xl font-semibold">About</h3>
+
+  <p className="text-gray-700">
+    I'm an operations and manufacturing professional with more than 13 years of experience leading production operations, inventory management, procurement, production planning, and process improvement within fast-paced manufacturing environments.
+  </p>
+
+  <p className="text-gray-700 mt-4">
+    My experience spans brewing, beverage manufacturing, packaging, and supply chain operations, where I've developed a reputation for hands-on leadership, adaptability, and data-driven decision making. This website serves as my professional portfolio and a record of ongoing projects and learning.
+  </p>
+</section>
 
       <section className="space-y-2">
         <h3 className="text-2xl font-semibold">Skills</h3>
