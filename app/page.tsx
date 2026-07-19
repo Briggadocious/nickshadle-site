@@ -30,10 +30,8 @@ export default function Home() {
 
   return (
     <main className="relative min-h-screen overflow-hidden bg-[#080a0f] text-white">
-      {/* Soft background glow */}
       <div className="pointer-events-none fixed inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.12),transparent_45%)]" />
 
-      {/* Flower of Life background */}
       <div className="pointer-events-none fixed inset-0 flex items-center justify-center overflow-hidden">
         <svg
           viewBox="0 0 600 600"
@@ -55,9 +53,14 @@ export default function Home() {
         </svg>
       </div>
 
-      {/* Page content */}
       <div className="relative z-10 mx-auto max-w-4xl space-y-16 px-6 py-16">
-        <section className="space-y-3">
+        <section className="flex flex-col items-center space-y-4 text-center">
+          <img
+            src="/profile.jpg"
+            alt="Nicholas Shadle"
+            className="h-40 w-40 rounded-full border-4 border-white/15 object-cover shadow-2xl"
+          />
+
           <p className="text-sm uppercase tracking-[0.3em] text-blue-300">
             Professional Portfolio
           </p>
@@ -70,7 +73,7 @@ export default function Home() {
             Operations • Supply Chain • Continuous Improvement
           </h2>
 
-          <div className="flex gap-5 pt-3 text-blue-300">
+          <div className="flex justify-center gap-5 pt-3 text-blue-300">
             <a
               href="https://www.linkedin.com/in/nick-shadle-679461230"
               target="_blank"
@@ -97,7 +100,7 @@ export default function Home() {
         </section>
 
         <section className="rounded-2xl border border-white/10 bg-black/30 p-6 backdrop-blur-sm">
-          <h3 className="text-2xl font-semibold">About</h3>
+          <h3 className="text-center text-2xl font-semibold">About</h3>
 
           <p className="mt-4 leading-7 text-gray-300">
             I&apos;m an operations and manufacturing professional with more
@@ -115,10 +118,10 @@ export default function Home() {
           </p>
         </section>
 
-        <section className="space-y-4">
+        <section className="space-y-4 text-center">
           <h3 className="text-2xl font-semibold">Skills</h3>
 
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap justify-center gap-2">
             {skills.map((skill) => (
               <span
                 key={skill}
@@ -131,11 +134,13 @@ export default function Home() {
         </section>
 
         <section className="space-y-4">
-          <h3 className="text-2xl font-semibold">Projects</h3>
+          <h3 className="text-center text-2xl font-semibold">Projects</h3>
 
           <div className="space-y-4">
             <div className="rounded-xl border border-white/10 bg-black/30 p-5 backdrop-blur-sm">
-              <h4 className="font-semibold">Production Tracking System</h4>
+              <h4 className="text-center font-semibold">
+                Production Tracking System
+              </h4>
 
               <p className="mt-2 text-sm leading-6 text-gray-300">
                 Built a system to track output and identify bottlenecks in
@@ -144,7 +149,9 @@ export default function Home() {
             </div>
 
             <div className="rounded-xl border border-white/10 bg-black/30 p-5 backdrop-blur-sm">
-              <h4 className="font-semibold">Inventory Optimization</h4>
+              <h4 className="text-center font-semibold">
+                Inventory Optimization
+              </h4>
 
               <p className="mt-2 text-sm leading-6 text-gray-300">
                 Improved forecasting and reduced waste through better inventory
