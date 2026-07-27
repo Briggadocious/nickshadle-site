@@ -6,6 +6,28 @@ export default function Home() {
     "Lean Manufacturing",
   ];
 
+  const tools = [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Git",
+    "GitHub",
+    "Vercel",
+    "ChatGPT",
+  ];
+
+  const projectSkills = [
+    "Responsive website development",
+    "Version control and Git workflows",
+    "Production deployment",
+    "Debugging and troubleshooting",
+    "User-interface design",
+    "AI-assisted development",
+    "Iterative improvement",
+    "Independent technical learning",
+  ];
+
   const flowerCircles = [
     [300, 300],
     [300, 220],
@@ -133,30 +155,87 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="space-y-4">
-          <h3 className="text-center text-2xl font-semibold">Projects</h3>
+        <section className="space-y-6">
+          <div className="text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-300">
+              Featured Project
+            </p>
 
-          <div className="space-y-4">
-            <div className="rounded-xl border border-white/10 bg-black/30 p-5 backdrop-blur-sm">
-              <h4 className="text-center font-semibold">
-                Production Tracking System
-              </h4>
+            <h3 className="mt-2 text-3xl font-bold tracking-tight">
+              Building NickShadle.com
+            </h3>
+          </div>
 
-              <p className="mt-2 text-sm leading-6 text-gray-300">
-                Built a system to track output and identify bottlenecks in
-                production flow.
-              </p>
-            </div>
+          <div className="rounded-2xl border border-white/10 bg-black/30 p-6 shadow-xl backdrop-blur-sm md:p-8">
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-2xl font-semibold">
+                  Personal Portfolio Website
+                </h4>
 
-            <div className="rounded-xl border border-white/10 bg-black/30 p-5 backdrop-blur-sm">
-              <h4 className="text-center font-semibold">
-                Inventory Optimization
-              </h4>
+                <p className="mt-3 leading-7 text-gray-300">
+                  I designed, built, and deployed this website to showcase my
+                  professional experience while expanding my technical skills.
+                  Although software development is not my primary profession,
+                  this project demonstrates the same curiosity, adaptability,
+                  problem-solving, and continuous-improvement mindset that I
+                  have applied throughout my manufacturing career.
+                </p>
+              </div>
 
-              <p className="mt-2 text-sm leading-6 text-gray-300">
-                Improved forecasting and reduced waste through better inventory
-                planning.
-              </p>
+              <div>
+                <h4 className="text-lg font-semibold">Tools Used</h4>
+
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {tools.map((tool) => (
+                    <span
+                      key={tool}
+                      className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-gray-300"
+                    >
+                      {tool}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <h4 className="text-lg font-semibold">Skills Demonstrated</h4>
+
+                <div className="mt-3 grid gap-3 sm:grid-cols-2">
+                  {projectSkills.map((skill) => (
+                    <div
+                      key={skill}
+                      className="rounded-xl border border-white/10 bg-black/20 p-3 text-sm text-gray-300"
+                    >
+                      {skill}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="rounded-xl border border-white/10 bg-white/5 p-4">
+                <p className="text-sm leading-6 text-gray-300">
+                  <span className="font-semibold text-white">
+                    Why it matters:
+                  </span>{" "}
+                  Building this site required me to learn unfamiliar tools,
+                  resolve technical problems, manage changes through GitHub,
+                  and continuously improve the final product—skills that
+                  directly support my work in operations, manufacturing, and
+                  process improvement.
+                </p>
+              </div>
+
+              <div>
+                <a
+                  href="https://github.com/Briggadocious/nickshadle-site"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block rounded-lg bg-white px-4 py-2 text-sm font-semibold text-black transition hover:bg-gray-200"
+                >
+                  View GitHub Repository
+                </a>
+              </div>
             </div>
           </div>
         </section>
