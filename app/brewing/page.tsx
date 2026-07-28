@@ -1,3 +1,5 @@
+import SiteNav from "../components/SiteNav";
+
 export default function BrewingPage() {
   const skills = [
     "Brewhouse Operations",
@@ -41,18 +43,8 @@ export default function BrewingPage() {
 
   return (
     <main className="min-h-screen bg-[#080a0f] text-white">
+      <SiteNav />
       <div className="mx-auto max-w-5xl space-y-14 px-6 py-12">
-        <nav className="flex flex-wrap items-center justify-between gap-4">
-          <a href="/" className="text-sm font-semibold text-amber-300 hover:text-white">
-            ← Back to Home
-          </a>
-          <a
-            href="/resume.pdf"
-            className="rounded-lg border border-white/15 bg-white/5 px-4 py-2 text-sm font-medium hover:bg-white/10"
-          >
-            Download Resume
-          </a>
-        </nav>
 
         <header className="mx-auto max-w-3xl space-y-5 text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-amber-300">

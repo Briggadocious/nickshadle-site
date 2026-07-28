@@ -1,3 +1,5 @@
+import SiteNav from "../components/SiteNav";
+
 export default function ProjectsPage() {
   const tools = [
     "Next.js",
@@ -45,6 +47,7 @@ export default function ProjectsPage() {
 
   return (
     <main className="relative min-h-screen overflow-hidden bg-[#080a0f] text-white">
+      <SiteNav />
       <div className="pointer-events-none fixed inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.14),transparent_45%)]" />
 
       <div className="pointer-events-none fixed inset-0 flex items-center justify-center overflow-hidden">
@@ -69,21 +72,6 @@ export default function ProjectsPage() {
       </div>
 
       <div className="relative z-10 mx-auto max-w-5xl space-y-14 px-6 py-12">
-        <nav className="flex flex-wrap items-center justify-between gap-4">
-          <a
-            href="/"
-            className="text-sm font-semibold text-blue-300 transition hover:text-white"
-          >
-            ← Back to Home
-          </a>
-
-          <a
-            href="/brewing"
-            className="rounded-lg border border-amber-300/30 bg-amber-300/10 px-4 py-2 text-sm font-medium text-amber-200 transition hover:bg-amber-300/20"
-          >
-            Brewing Career
-          </a>
-        </nav>
 
         <header className="mx-auto max-w-3xl space-y-5 text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-300">

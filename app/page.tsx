@@ -1,3 +1,5 @@
+import SiteNav from "./components/SiteNav";
+
 export default function Home() {
   const skills = [
     "Production Planning",
@@ -52,6 +54,7 @@ export default function Home() {
 
   return (
     <main className="relative min-h-screen overflow-hidden bg-[#080a0f] text-white">
+      <SiteNav />
       <div className="pointer-events-none fixed inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.12),transparent_45%)]" />
 
       <div className="pointer-events-none fixed inset-0 flex items-center justify-center overflow-hidden">
@@ -133,6 +136,13 @@ export default function Home() {
               className="inline-block rounded-lg border border-blue-300/40 bg-blue-400/10 px-5 py-3 font-medium text-blue-200 transition hover:bg-blue-400/20 hover:text-white"
             >
               View My Projects
+            </a>
+
+            <a
+              href="/beyond-work"
+              className="inline-block rounded-lg border border-violet-300/40 bg-violet-400/10 px-5 py-3 font-medium text-violet-200 transition hover:bg-violet-400/20 hover:text-white"
+            >
+              Beyond Work
             </a>
           </div>
         </section>
