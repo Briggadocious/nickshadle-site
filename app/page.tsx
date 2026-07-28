@@ -113,12 +113,21 @@ export default function Home() {
             </a>
           </div>
 
-          <a
-            href="/resume.pdf"
-            className="mt-5 inline-block rounded-lg border border-white/20 bg-white px-5 py-3 font-medium text-black transition hover:bg-gray-200"
-          >
-            Download Resume
-          </a>
+          <div className="mt-5 flex flex-wrap justify-center gap-3">
+            <a
+              href="/resume.pdf"
+              className="inline-block rounded-lg border border-white/20 bg-white px-5 py-3 font-medium text-black transition hover:bg-gray-200"
+            >
+              Download Resume
+            </a>
+
+            <a
+              href="/brewing"
+              className="inline-block rounded-lg border border-amber-300/40 bg-amber-300/10 px-5 py-3 font-medium text-amber-200 transition hover:bg-amber-300/20 hover:text-white"
+            >
+              Explore My Brewing Career
+            </a>
+          </div>
         </section>
 
         <section className="rounded-2xl border border-white/10 bg-black/30 p-6 backdrop-blur-sm">
