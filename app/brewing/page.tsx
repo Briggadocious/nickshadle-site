@@ -1,5 +1,5 @@
 import SiteNav from "../components/SiteNav";
-
+import BrewingSlideshow from "../components/BrewingSlideshow";
 export default function BrewingPage() {
   const skills = [
     "Brewhouse Operations",
@@ -148,6 +148,7 @@ export default function BrewingPage() {
                     </a>
                   )}
                 </div>
+                {index === 0 && <BrewingSlideshow />}
               </article>
             ))}
           </div>
