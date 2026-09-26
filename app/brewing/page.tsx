@@ -1,5 +1,6 @@
 import SiteNav from "../components/SiteNav";
 import BrewingSlideshow from "../components/BrewingSlideshow";
+import ICBSlideshow from "../components/ICBSlideshow";
 export default function BrewingPage() {
   const skills = [
     "Brewhouse Operations",
@@ -106,7 +107,7 @@ export default function BrewingPage() {
               <article
                 key={chapter.title}
                 className={`relative pl-12 md:grid md:grid-cols-2 md:gap-12 md:pl-0 ${
-                  index % 2 === 0 ? "" : "md:[&>div]:col-start-2"
+                  index % 2 === 0 ? "" : "md:[&>div:first-of-type]:col-start-2"
                 }`}
               >
                 <div className="absolute left-[9px] top-7 h-4 w-4 rounded-full border-4 border-[#080a0f] bg-amber-300 shadow-[0_0_0_1px_rgba(252,211,77,0.45)] md:left-1/2 md:-translate-x-1/2" />
@@ -149,6 +150,11 @@ export default function BrewingPage() {
                   )}
                 </div>
                 {index === 0 && <BrewingSlideshow />}
+                {index === 1 && (
+  <div className="md:col-start-1 md:row-start-1 md:mt-6">
+    <ICBSlideshow />
+  </div>
+)}
               </article>
             ))}
           </div>
