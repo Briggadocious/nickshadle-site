@@ -1,3 +1,4 @@
+import HotelTangoSlideshow from "../components/HotelTangoSlideshow";
 import SiteNav from "../components/SiteNav";
 import BrewingSlideshow from "../components/BrewingSlideshow";
 import ICBSlideshow from "../components/ICBSlideshow";
@@ -150,6 +151,7 @@ export default function BrewingPage() {
                   )}
                 </div>
                 {index === 0 && <BrewingSlideshow />}
+                {index === 3 && <HotelTangoSlideshow />}
                 {index === 1 && (
   <div className="md:col-start-1 md:row-start-1 md:mt-6">
     <ICBSlideshow />
