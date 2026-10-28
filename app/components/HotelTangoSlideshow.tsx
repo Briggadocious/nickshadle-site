@@ -4,10 +4,12 @@ import { useEffect, useRef, useState } from "react";
 
 type Slide = { type: "video"; src: string; label: string } | { type: "image"; src: string; label: string };
 
-// Add Hotel Tango photos here later using { type: "image", src: "/images/brewing/...", label: "..." }.
 const slides: Slide[] = [
+  { type: "image", src: "/images/brewing/hotel-tango/HTBottles.jpg", label: "Hotel Tango ready-to-drink bourbon and vodka bottles" },
   { type: "video", src: "/videos/hotel-tango/HTBottleFiller.mp4", label: "Hotel Tango bottling line — filler" },
+  { type: "image", src: "/images/brewing/hotel-tango/IMG_9394_Original.jpg", label: "Hotel Tango production and packaging line" },
   { type: "video", src: "/videos/hotel-tango/HTBottleCollector.mp4", label: "Hotel Tango bottling line — bottle collector" },
+  { type: "image", src: "/images/brewing/hotel-tango/NickAtHT.jpg", label: "At Hotel Tango Distillery beside production equipment" },
 ];
 
 export default function HotelTangoSlideshow() {
