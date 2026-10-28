@@ -154,6 +154,13 @@ export default function BrewingPage() {
                 {index === 3 && <HotelTangoSlideshow />}
                 {index === 1 && (
   <div className="md:col-start-1 md:row-start-1 md:mt-6">
+    <div className="mb-5 overflow-hidden rounded-xl border border-amber-300/20 bg-black">
+      <img
+        src="/images/brewing/indiana-city-logo.png"
+        alt="Indiana City Brewing Company logo"
+        className="block h-auto w-full object-contain"
+      />
+    </div>
     <ICBSlideshow />
   </div>
 )}
