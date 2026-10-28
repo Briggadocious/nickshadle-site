@@ -150,17 +150,19 @@ export default function BrewingPage() {
                     </a>
                   )}
                 </div>
+                {index === 2 && (
+                  <div className="flex items-center justify-center rounded-2xl border border-amber-300/20 bg-black/30 p-5 md:col-start-2 md:row-start-1">
+                    <img
+                      src="/images/brewing/indiana-city-logo.png"
+                      alt="Indiana City Brewing Company logo"
+                      className="max-h-[360px] w-full rounded-xl object-contain"
+                    />
+                  </div>
+                )}
                 {index === 0 && <BrewingSlideshow />}
                 {index === 3 && <HotelTangoSlideshow />}
                 {index === 1 && (
   <div className="md:col-start-1 md:row-start-1 md:mt-6">
-    <div className="mb-5 overflow-hidden rounded-xl border border-amber-300/20 bg-black">
-      <img
-        src="/images/brewing/indiana-city-logo.png"
-        alt="Indiana City Brewing Company logo"
-        className="block h-auto w-full object-contain"
-      />
-    </div>
     <ICBSlideshow />
   </div>
 )}
