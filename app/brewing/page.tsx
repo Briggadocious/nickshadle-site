@@ -164,7 +164,7 @@ export default function BrewingPage() {
                   {index === 4 && <QuaffOnSlideshow />}
                 {index === 3 && <HotelTangoSlideshow />}
                 {index === 1 && (
-  <div className="md:col-start-1 md:row-start-1 md:mt-6">
+  <div className="md:col-start-1 md:row-start-1 md:mt-6 rounded-2xl border border-white/10 bg-black/30 p-5 backdrop-blur-sm">
     <ICBSlideshow />
   </div>
 )}
